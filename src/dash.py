@@ -1,9 +1,7 @@
-from flask import Blueprint, render_template, request, jsonify
+from flask import Blueprint, render_template, request
 from flask_login import login_required
 import pandas as pd
-import plotly.express as px
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 from plotly.utils import PlotlyJSONEncoder
 import json
 from . import db
