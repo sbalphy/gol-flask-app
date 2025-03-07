@@ -9,7 +9,6 @@ O aplicativo possui autenticação básica (usuário e senha base são admin) us
 Para rodar o aplicativo, basta clonar o repositório, buildar a imagem Docker definida na Dockerfile e executar o compose.yml para levantar o container. Com o aplicativo funcional, ele estará disponível na porta 5000 do localhost (localhost:5000 em qualquer web browser).
 
 ## Notas
-A imagem está disponível no Docker Hub em https://hub.docker.com/repository/docker/sbalphy/gol-flask-app/general.
+A imagem está disponível no Docker Hub em https://hub.docker.com/repository/docker/sbalphy/gol-flask-app/general. Ela também está publicada no Microsoft Azure em https://gol-flask-app-eddeg0akcwfme0ha.brazilsouth-01.azurewebsites.net/. 
 
 A database SQLite é montada no mountpoint /app/data associado ao diretório data. Ela está incluída no repositório e na imagem pois é pequena, mas ela também pode ser construída usando o script init_db.py. Uso de volumes/bind mounts permite persistência mesmo se decidirmos tratar com uma quantidade maior de dados.
-
