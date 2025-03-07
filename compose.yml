@@ -4,6 +4,6 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ./data:/data
+      - ./data:/app/data
     environment:
-      - DB_PATH=/data/database.db
+      - DB_PATH=/app/data/database.db

@@ -1,7 +1,5 @@
 FROM python:3.10-alpine
 
-RUN mkdir /data
-
 WORKDIR /app
 
 COPY requirements.txt .

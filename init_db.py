@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import sqlite3
 
-DB_PATH = os.environ.get('DB_PATH', '/data/database.db')
+DB_PATH = os.environ.get('DB_PATH', '/app/data/database.db')
 DATA_URL = "https://sistemas.anac.gov.br/dadosabertos/Voos%20e%20opera%C3%A7%C3%B5es%20a%C3%A9reas/Dados%20Estat%C3%ADsticos%20do%20Transporte%20A%C3%A9reo/Dados_Estatisticos.csv"
 
 def create_db():
